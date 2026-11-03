@@ -39,7 +39,18 @@ No se modificaron archivos anteriores del proyecto, porque el repositorio remoto
 - Se revisaron las responsabilidades, la explicación de cohesión y los enlaces relativos. El primer control de enlaces detectó que aún faltaba crear el registro de verificación; se completó y se repitió el control antes del commit.
 - Se verificó la identidad de las dos copias de las capturas mediante SHA-256. Los resultados exactos están en `docs/estacion-01/verificacion.txt`.
 - Se comprobó la ausencia de archivos Java dentro del clon. Se detectaron JDK y javac 17.0.18; no se ejecutó una compilación Java ni las pruebas P01-P11, porque no aplican a esta estación documental.
-- Se ejecuta `git diff --cached --check` antes de crear el commit. La publicación y el seguimiento se registran tras realizarse, sin afirmar anticipadamente su resultado.
+- Se ejecutó `git diff --cached --check` sin errores antes de crear el commit.
+
+### Commit y publicación verificados
+
+- Commit principal: `61ae6505de78dce73685ef4fb991e22fcc771b0d`.
+- Mensaje: `docs(estacion-01): modelar el flujo y separar responsabilidades`.
+- Rama local: `estacion-01`.
+- Rama remota: `origin/estacion-01`, correspondiente a `refs/heads/estacion-01` en `Alejoms09/Diana-trabajo`.
+- Se ejecutó `git push -u origin estacion-01` correctamente. Después de `git fetch`, el hash local, el de seguimiento y el publicado obtenido con `git ls-remote` coincidieron con el commit principal.
+- `git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}'` devolvió `origin/estacion-01`; `git branch -vv` mostró ese seguimiento y `git status --short --branch` mostró el árbol limpio.
+- Se incorpora este resultado, junto con `verificacion.txt` y el enlace de entrega, en un segundo commit documental descriptivo. Su hash se obtiene con `git log -2 --format=fuller` y se entrega tras verificar también su publicación.
+- Rama para revisión: <https://github.com/Alejoms09/Diana-trabajo/tree/estacion-01>.
 
 ### Control de avance
 

@@ -89,7 +89,9 @@ Separar estas responsabilidades permite mantener cada regla en el componente que
 - **Compilación Java:** no aplica a la estación 1; esta estación pide modelar el flujo antes de programar. No se afirma una compilación ni una ejecución de Main.
 - **Pruebas de ejecución:** no aplican a este alcance. Las pruebas funcionales P01 a P11 corresponden al desarrollo posterior; todavía no se declaran aprobadas.
 - **Revisión visual del PDF y del diagrama:** los resultados reales se documentan por separado al generar y revisar los artefactos.
-- **Git y publicación remota:** las ramas, el seguimiento remoto y los hashes deben verificarse con Git. Este documento no sustituye ese registro ni afirma que una publicación pendiente ya se haya realizado.
+- **Git y publicación remota:** se verificó la publicación de `estacion-01` en `Alejoms09/Diana-trabajo` y el seguimiento `origin/estacion-01`. Los comandos, hashes y resultados constan en [el registro de verificación](verificacion.txt) y en [la bitácora](../../BITACORA.md).
+
+La [rama publicada para revisión](https://github.com/Alejoms09/Diana-trabajo/tree/estacion-01) contiene esta estación y sus doce archivos, enumerados de forma exacta en la bitácora.
 
 ## Capturas que debe tomar el estudiante
 

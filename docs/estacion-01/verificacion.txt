@@ -15,3 +15,28 @@ FUENTES ORIGINALES, SHA-256:
 0287aa87520fc8a438ee4a04ae5faab4584ba2b97620ba2c3acfc961e7466a50  docs/estacion-01/fuentes/Captura de pantalla 2026-11-03 103519.png
 ad4d8ca566dbbf66cea53c996d80fec42995d1eab7aa567ee29ac152f6fd484d  docs/estacion-01/fuentes/Captura de pantalla 2026-11-03 103535.png
 OK: ambas copias son identicas byte a byte a las capturas originales.
+
+REVISION VISUAL REALIZADA:
+Se renderizaron e inspeccionaron ambas paginas del PDF; sin cortes ni solapamientos.
+Segunda revision independiente: flujo, nombres, responsabilidades, cohesion y legibilidad aprobados.
+git diff --cached --check: codigo de salida 0 antes del commit principal.
+
+PUBLICACION VERIFICADA DEL COMMIT PRINCIPAL:
+git push -u origin estacion-01: codigo de salida 0; rama publicada y seguimiento configurado.
+git fetch origin estacion-01: codigo de salida 0.
+git rev-parse HEAD:
+61ae6505de78dce73685ef4fb991e22fcc771b0d
+git rev-parse origin/estacion-01:
+61ae6505de78dce73685ef4fb991e22fcc771b0d
+git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}':
+origin/estacion-01
+git branch -vv:
+* estacion-01 61ae650 [origin/estacion-01] docs(estacion-01): modelar el flujo y separar responsabilidades
+git ls-remote --heads origin:
+61ae6505de78dce73685ef4fb991e22fcc771b0d  refs/heads/estacion-01
+git status --short --branch:
+## estacion-01...origin/estacion-01
+
+Este registro se incorpora en un segundo commit documental. La comprobacion final
+de su hash remoto y del arbol limpio se entrega despues de publicarlo.
+No existen commits ni integraciones en main. Estaciones 2 a 8 pendientes de autorizacion.
