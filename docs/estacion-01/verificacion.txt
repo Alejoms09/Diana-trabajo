@@ -1,0 +1,17 @@
+VERIFICACION LOCAL DE ESTACION 1 - 03/11/2026 (America/Bogota)
+OK: Markdown: ocho pasos literales y decision exacta.
+OK: Mermaid: ocho pasos literales y decision exacta.
+OK: SVG: ocho pasos literales y decision exacta.
+OK: PDF: ocho pasos literales y decision exacta.
+OK: salida No terminal y salida Si hacia Builder en fuente Mermaid.
+OK: ocho responsabilidades y explicacion de cohesion y mantenimiento en Markdown.
+OK: PDF de dos paginas; texto dentro de los limites de pagina.
+OK: enlaces locales en README y documento de estacion.
+OK: sin implementacion de estaciones posteriores ni archivos Java en el clon.
+Compilacion Java y pruebas P01-P11: NO APLICAN a la estacion 1; no ejecutadas.
+Herramientas detectadas: Temurin OpenJDK 17.0.18; javac 17.0.18; Python 3.13; ReportLab 5.1.0.
+Renderizado: PyMuPDF (Poppler no esta disponible en PATH).
+FUENTES ORIGINALES, SHA-256:
+0287aa87520fc8a438ee4a04ae5faab4584ba2b97620ba2c3acfc961e7466a50  docs/estacion-01/fuentes/Captura de pantalla 2026-11-03 103519.png
+ad4d8ca566dbbf66cea53c996d80fec42995d1eab7aa567ee29ac152f6fd484d  docs/estacion-01/fuentes/Captura de pantalla 2026-11-03 103535.png
+OK: ambas copias son identicas byte a byte a las capturas originales.

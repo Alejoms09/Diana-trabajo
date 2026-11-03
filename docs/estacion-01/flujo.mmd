@@ -1,0 +1,18 @@
+flowchart TD
+    INICIO([Inicio]) --> P1["1. El estudiante registra los datos de la solicitud."]
+    P1 --> P2["2. El sistema consulta las salas disponibles."]
+    P2 --> P3["3. Una estrategia selecciona la sala."]
+    P3 --> D{"¿hay una sala adecuada?"}
+    D -->|No| SIN_SALA(["Fin sin crear una reserva confirmada."])
+    D -->|Sí| P4["4. Builder construye la reserva y valida los datos."]
+    P4 --> P5["5. Facade registra y coordina la confirmación."]
+    P5 --> P6["6. State valida el cambio de estado."]
+    P6 --> P7["7. Observer comunica el cambio a los suscriptores."]
+    P7 --> P8["8. El estudiante puede cancelar o finalizar la reserva según su estado."]
+    P8 --> FIN([Fin])
+
+    %% Detalle de la guía: los cambios solicitados en el paso 8 también pasan
+    %% por la validación de State y, si se aceptan, por Observer.
+    %% Pendiente -> Confirmada; Pendiente -> Cancelada;
+    %% Confirmada -> Cancelada; Confirmada -> Finalizada.
+    %% Una transición rechazada no genera notificación.

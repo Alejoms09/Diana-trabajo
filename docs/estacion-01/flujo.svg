@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="595.28" height="841.89" viewBox="0 0 595.28 841.89" role="img" aria-labelledby="title desc">
+<title id="title">Estación 1: diagrama del flujo de reservas</title>
+<desc id="desc">Ocho pasos de la guía. La decisión ¿hay una sala adecuada? termina sin crear una reserva confirmada si la respuesta es No.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="42" y="39" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#235783" text-anchor="start">BIBLIOTECARESERVAS / LABORATORIO DE PATRONES</text>
+<text x="42" y="65" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#235783" text-anchor="start">Estación 1</text>
+<text x="42" y="84" font-family="Arial, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">Comprender el problema y modelar el flujo</text>
+<text x="42" y="818" font-family="Arial, sans-serif" font-size="8" font-weight="400" fill="#475569" text-anchor="start">Guía proporcionada por el usuario | 03/11/2026 | Solo estación 1</text>
+<text x="553.2755905511812" y="818" font-family="Arial, sans-serif" font-size="8" font-weight="400" fill="#475569" text-anchor="end">1 / 2</text>
+<rect x="154" y="101" width="106" height="22" rx="11" fill="#FFFFFF" stroke="#235783" stroke-width="0.9"/>
+<text x="207" y="116" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1E293B" text-anchor="middle">Inicio</text>
+<polyline points="207,123 207,137" fill="none" stroke="#235783"/>
+<polyline points="204,132 207,137 210,132" fill="none" stroke="#235783"/>
+<rect x="42" y="137" width="330" height="38" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="159.5" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">1. El estudiante registra los datos de la solicitud.</text>
+<polyline points="207,175 207,190" fill="none" stroke="#235783"/>
+<polyline points="204,185 207,190 210,185" fill="none" stroke="#235783"/>
+<rect x="42" y="190" width="330" height="38" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="212.5" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">2. El sistema consulta las salas disponibles.</text>
+<polyline points="207,228 207,243" fill="none" stroke="#235783"/>
+<polyline points="204,238 207,243 210,238" fill="none" stroke="#235783"/>
+<rect x="42" y="243" width="330" height="38" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="265.5" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">3. Una estrategia selecciona la sala.</text>
+<polyline points="207,281 207,292" fill="none" stroke="#235783"/>
+<polyline points="204,287 207,292 210,287" fill="none" stroke="#235783"/>
+<polygon points="207,292 322,326 207,360 92,326 207,292" fill="#DFECF7" stroke="#235783"/>
+<text x="207" y="324" font-family="Arial, sans-serif" font-size="10.4" font-weight="700" fill="#1E293B" text-anchor="middle">¿hay una sala</text>
+<text x="207" y="338" font-family="Arial, sans-serif" font-size="10.4" font-weight="700" fill="#1E293B" text-anchor="middle">adecuada?</text>
+<polyline points="322,326 408,326" fill="none" stroke="#235783"/>
+<polyline points="403,323 408,326 403,329" fill="none" stroke="#235783"/>
+<text x="358" y="317" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1E293B" text-anchor="middle">No</text>
+<rect x="408" y="294" width="145" height="64" rx="12" fill="#FFFFFF" stroke="#235783" stroke-width="0.9"/>
+<text x="480.5" y="314" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">Fin sin crear</text>
+<text x="480.5" y="328" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">una reserva</text>
+<text x="480.5" y="342" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">confirmada.</text>
+<polyline points="207,360 207,393" fill="none" stroke="#235783"/>
+<polyline points="204,388 207,393 210,388" fill="none" stroke="#235783"/>
+<text x="219" y="382" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1E293B" text-anchor="start">Sí</text>
+<rect x="42" y="393" width="330" height="38" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="415.5" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">4. Builder construye la reserva y valida los datos.</text>
+<polyline points="207,431 207,446" fill="none" stroke="#235783"/>
+<polyline points="204,441 207,446 210,441" fill="none" stroke="#235783"/>
+<rect x="42" y="446" width="330" height="38" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="468.5" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">5. Facade registra y coordina la confirmación.</text>
+<polyline points="207,484 207,499" fill="none" stroke="#235783"/>
+<polyline points="204,494 207,499 210,494" fill="none" stroke="#235783"/>
+<rect x="42" y="499" width="330" height="38" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="521.5" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">6. State valida el cambio de estado.</text>
+<polyline points="207,537 207,552" fill="none" stroke="#235783"/>
+<polyline points="204,547 207,552 210,547" fill="none" stroke="#235783"/>
+<rect x="42" y="552" width="330" height="38" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="574.5" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">7. Observer comunica el cambio a los suscriptores.</text>
+<polyline points="207,590 207,605" fill="none" stroke="#235783"/>
+<polyline points="204,600 207,605 210,600" fill="none" stroke="#235783"/>
+<rect x="42" y="605" width="330" height="48" rx="7" fill="#EEF4FA" stroke="#235783" stroke-width="0.9"/>
+<text x="207.0" y="626.0" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">8. El estudiante puede cancelar o finalizar la reserva según su</text>
+<text x="207.0" y="639.0" font-family="Arial, sans-serif" font-size="10.4" font-weight="400" fill="#1E293B" text-anchor="middle">estado.</text>
+<polyline points="207,653 207,678" fill="none" stroke="#235783"/>
+<polyline points="204,673 207,678 210,673" fill="none" stroke="#235783"/>
+<rect x="154" y="678" width="106" height="23" rx="11" fill="#FFFFFF" stroke="#235783" stroke-width="0.9"/>
+<text x="207" y="694" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1E293B" text-anchor="middle">Fin</text>
+<text x="42" y="731" font-family="Arial, sans-serif" font-size="9.5" font-weight="400" fill="#475569" text-anchor="start">Los cambios del paso 8 se validan con State y, si se aceptan, se comunican con Observer. Una transición rechazada no</text>
+<text x="42" y="744" font-family="Arial, sans-serif" font-size="9.5" font-weight="400" fill="#475569" text-anchor="start">genera notificación.</text>
+<text x="42" y="773" font-family="Arial, sans-serif" font-size="9.5" font-weight="400" fill="#475569" text-anchor="start">Transiciones: Pendiente a Confirmada o Cancelada; Confirmada a Cancelada o Finalizada.</text>
+</svg>
