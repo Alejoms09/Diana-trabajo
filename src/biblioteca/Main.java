@@ -1,20 +1,48 @@
 package biblioteca;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.List;
 
 public class Main {
 public static void main(String[] args) {
-RepositorioSalas salas = new RepositorioSalasMemoria();
-RepositorioReservasMemoria reservas = new RepositorioReservasMemoria();
-List<ObservadorReserva> observadores = List.of(new NotificadorEstudiante(), new RegistroEventos());
-ReservaFacade fachada = new ReservaFacade(salas, reservas, observadores);
-Reserva reserva = fachada.realizarReserva(
-    new Estudiante("E001", "Laura"), LocalDate.now().plusDays(7),
-    LocalTime.of(14, 0), 2, 4, new SeleccionPorCapacidad()).orElseThrow();
+Reserva reserva = new ReservaBuilder()
+.estudiante(new Estudiante("E001", "Laura"))
+.fecha(java.time.LocalDate.now().plusDays(7))
+.horaInicio(java.time.LocalTime.of(14, 0))
+.duracionHoras(2)
+.cantidadPersonas(4)
+.sala(new Sala("B", "Sala B", 4))
+.build();
+reserva.agregarObservador(new NotificadorEstudiante());
+reserva.agregarObservador(new RegistroEventos());
+System.out.println(reserva);
+reserva.confirmar();
 System.out.println(reserva);
 reserva.cancelar();
 System.out.println(reserva);
+try {
+    reserva.confirmar();
+    throw new AssertionError("Se confirmó una reserva cancelada.");
+} catch (IllegalStateException ex) {
+    System.out.println("Operación rechazada: " + ex.getMessage());
+}
+Reserva otra = new ReservaBuilder()
+.estudiante(new Estudiante("E004", "Samuel"))
+.fecha(java.time.LocalDate.now().plusDays(7))
+.horaInicio(java.time.LocalTime.of(14, 0))
+.duracionHoras(2)
+.cantidadPersonas(2)
+.sala(new Sala("A", "Sala A", 2))
+.build();
+otra.agregarObservador(new NotificadorEstudiante());
+otra.agregarObservador(new RegistroEventos());
+otra.confirmar();
+System.out.println(otra);
+otra.finalizar();
+System.out.println(otra);
+try {
+    otra.cancelar();
+    throw new AssertionError("Se canceló una reserva finalizada.");
+} catch (IllegalStateException ex) {
+    System.out.println("Operación rechazada: " + ex.getMessage());
+}
 }
 }
